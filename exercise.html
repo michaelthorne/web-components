@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Web Components – Scroll Shadow Element</title>
+    <!-- unpkg CDN -->
+    <script type="module" src="https://unpkg.com/scroll-shadow-element"></script>
+    <style>
+      ::-webkit-scrollbar {
+        display: none;
+      }
+      p {
+        height: 4em;
+        max-width: 20em;
+        overflow: auto;
+      }
+      scroll-shadow {
+        display: inline-block;
+        --scroll-shadow-size: 14;
+        --scroll-shadow-top: radial-gradient(farthest-side at 50% 0%, #0003, #0000);
+        --scroll-shadow-bottom: radial-gradient(farthest-side at 50% 100%, #0003, #0000);
+        --scroll-shadow-left: radial-gradient(farthest-side at 0%, #0003, #0000);
+        --scroll-shadow-right: radial-gradient(farthest-side at 100%, #0003, #0000);
+      }
+    </style>
+  </head>
+  <body>
+      <scroll-shadow>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </scroll-shadow>
+  </body>
+</html>
